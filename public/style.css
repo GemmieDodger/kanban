@@ -25,90 +25,46 @@
 }
 header{
     color: white;
-    background-color: black;
+    background-color: rgb(5, 5, 5);
     padding: 30px 100px 100px 100px;
+    border: 1px solid black;
     grid-area: header;
 }
 h1 {
-    font-family: 'Tangerine', serif;
+    border: solid 1px black;
     padding: 1rem;
     text-align: center;
     grid-area: h1;
 }
-#headerText {
-    font-family: 'Tangerine', serif;
-    font-size: 5rem;
-}
+
 .listHeader {
     padding: 10px;
     text-align: center;
 }
 
-
 .button1 {
     position: absolute;
     left: 55px;
     top: 40px;
-    
+    padding: 0px;
 }
 
-
-
-button {
-
-        background: transparent;
-        color:lightgoldenrodyellow;
-        font-weight: bolder;
-        outline: none;
-        padding: 5px;
-        
- 
+.button2 {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    padding: 0px;
 }
 
-button:hover {
-    color: darkred;
+.button3 {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    padding: 0px;
 }
-
-a {
-    background: transparent;
-    color:lightgoldenrodyellow;
-    font-weight: bolder;
-    text-decoration: none;
-}
-a:hover {
-    color: darkred;
-}
-
-input {
-    background: transparent;
-    color: lightgoldenrodyellow;
-    font-weight: bolder;
-    height: 25px;
-}
-::-webkit-input-placeholder { /* Edge */
-    color: lightgoldenrodyellow;
-    text-align: center;
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: lightgoldenrodyellow;
-    text-align: center;
-  }
-  
-  ::placeholder {
-    color: lightgoldenrodyellow;
-    text-align: center;
-  }
-li{
-    padding-top: 5px;
-    padding-bottom: 5px;
- }
- ul {
-     padding: 10px;
- }
 
 .lists {
-    
+
     float: center;
     border: 0.5rem solid #290c0c;
     border-radius: 1rem;
@@ -129,7 +85,6 @@ li{
 
 .card {
     position: relative;
-    padding-bottom: 10px;
     margin: 0;
     width: 80%;
     height: 80%;
@@ -139,7 +94,6 @@ li{
     transition: 0.4s; 
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
 }
 
 .taskLists{
@@ -160,17 +114,7 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 2rem;
-    width: 100%;
-    font-size: larger;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-  }
+
 
 
   
@@ -205,7 +149,7 @@ li{
 
 @media screen and (min-width: 60em) {
         .lists {
-            grid-template-columns: 32% 32% 32%;
+            grid-template-columns: auto auto auto;
             }
             
         }
